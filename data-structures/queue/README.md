@@ -1,11 +1,11 @@
-#Queue
+# Queue
 
 The queue structure acts in much the same way a queue at a till works. The first
 item into the queue will be the first item to leave the queue. That is, when an
 item is added to a queue, it cannot be removed until every item that was added
 before it is removed.
 
-#Functions included
+## Functions included
 
 ###### enqueue(x)
 enqueue will add an item _x_ to the front of the queue.
