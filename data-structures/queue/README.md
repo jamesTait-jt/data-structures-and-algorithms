@@ -14,7 +14,8 @@ enqueue will add an item _x_ to the front of the queue.
 dequeue will remove an item from the back of the queue.
 
 ###### enqueueBatch(xs)
-enqueueBatch enables you to add multiple items at once.
+enqueueBatch enables you to add multiple items at once. _xs_ should have type
+list/array, depending on the language.
 
 ###### dequeueBatch(n)
 dequeueBatch enables you the remove multiple items at once.
