@@ -1,0 +1,1 @@
+You need to write a program to check a String contains only numbers by using Regular expression in Java. You can use Java API but a solution without using Java API will be better because that is what interviewer can always ask.

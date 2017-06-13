@@ -1,0 +1,1 @@
+Write a function, which takes a String word and returns sentence on which words are reversed in order e.g. if an input is "Java is best programming language", the output should be "language programming best is Java".
