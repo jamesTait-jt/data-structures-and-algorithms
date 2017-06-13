@@ -23,6 +23,5 @@ class Queue:
         if n > len(self.data):
             raise IndexError("Cannot remove en element from an empty queue")
         while n>0:
-            self.data.pop(0)
+            self.dequeue()
             n -= 1
-
