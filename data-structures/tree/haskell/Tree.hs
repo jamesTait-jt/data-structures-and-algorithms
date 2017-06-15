@@ -29,10 +29,6 @@ dfsToList :: Tree a -> [a]
 dfsToList (Leaf x)       = [x]
 dfsToList (Branch x l r) = [x] ++ dfsToList l ++ dfsToList r
 
-bfsToList :: Tree a -> [a]
-bfsToList (Leaf x)       = [x]
-bfsToList (Branch x l r) = x ++ value l ++ value r 
-                        ++ bfsToList (fromMaybe (Leaf []) (left l)) 
-                        ++ bfsToList (fromMaybe (Leaf []) (right l)) 
-                        ++ bfsToList (fromMaybe (Leaf []) (left r)) 
-                        ++ bfsToList (fromMaybe (Leaf []) (right r))
+--bfsToList :: Tree a -> Queue a -> [a]
+--bfsToList (Leaf x) q       = enqueue q x
+--bfsToList (Branch x l r) q = enqueue (enqueue (enqueue q x) l)i r
