@@ -10,13 +10,16 @@ is a leaf.
 ## Functions included
 
 ###### value()
-This returns the value stored in a given node
+This returns the value stored in a given node.
 
 ###### left()
 Returns the subtree stored at the left child position.
 
 ###### right()
-Rreturns the subtree stored at the right child position.
+Returns the subtree stored at the right child position.
+
+###### children()
+Returns a list containing the two child subtrees of a branch.
 
 ###### fromList()
 Builds a tree from a list.
