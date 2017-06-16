@@ -1,5 +1,8 @@
 module Tree where
 
+--TODO: - Draw tree
+--      - build tree from list
+
 import Data.Maybe
 
 data Tree a = Empty
@@ -22,8 +25,16 @@ children :: Tree a -> [Tree a]
 children (Empty)        = []
 children (Branch x l r) = [l, r]
 
-fromList :: [a] -> Tree a
-fromList = undefined
+--fromList :: [a] -> (Tree a, [a])
+--fromList []        = (Empty, [])
+--fromList [x]       = (Branch x Empty Empty, [])
+--fromList [x, y]    = (Branch x (Branch y Empty Empty) Empty, [])
+--fromList [x, y, z] = (Branch x (Branch y Empty Empty) (Branch z Empty Empty), [])
+--fromList (x:xs)    = (Branch x
+
+--fromList' :: [a] -> (Tree a, [a])
+--fromList [] = Empty
+--fromList (x:xs) = 
 
 drawTree :: Tree a -> String
 drawTree = undefined

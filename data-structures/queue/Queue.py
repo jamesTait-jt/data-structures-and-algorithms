@@ -7,12 +7,12 @@ class Queue:
         return self.data[0]
 
     def enqueue(self, x):
-        self.data = self.data + [x]
+        self.data.append(x)
 
-    def enqueueBatch(self, x):
-        if not isinstance(x, list):
+    def enqueueBatch(self, xs):
+        if not isinstance(xs, list):
             raise TypeError("Can only add lists with enqueueBatch")
-        self.data = self.data + x
+        self.data = self.data + xs
 
     def dequeue(self):
         self.data.pop(0)
@@ -25,3 +25,4 @@ class Queue:
         while n>0:
             self.dequeue()
             n -= 1
+
