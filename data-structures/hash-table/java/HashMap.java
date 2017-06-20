@@ -18,10 +18,6 @@ public class HashMap {
         return table[key].getValue();
     }
 
-    public HashEntry[] getTable() {
-        return this.table;
-    }
-
     public void printHashMap() {
         for (int i = 0 ; i < TABLE_SIZE ; i++) {
             if (table[i] != null) {
