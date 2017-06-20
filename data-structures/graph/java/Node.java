@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.lang.RuntimeException;
 
 public class Node<T> {
 
@@ -23,6 +25,10 @@ public class Node<T> {
         }
     }
 
+    public void clearNeighbours() {
+        this.neighbours.clear();
+    }
+
     public void setIndex(int n) {
         this.index = n;
     }
@@ -33,6 +39,19 @@ public class Node<T> {
 
     public void addNeighbour(Node<T> node) {
         this.neighbours.add(node);
+    }
+
+    public void removeNeighbour(Node<T> node) {
+        if (neighbours.contains(node)) {
+           for (Iterator<Node<T>> iter = neighbours.listIterator() ; iter.hasNext() ; ) {
+                Node<T> a = iter.next();
+                if (a == node) {
+                    iter.remove();
+                }       
+            }
+        } else {
+            throw new RuntimeException("Node is not a neighbour");
+        }
     }
 
     public ArrayList<Node<T>> getNeighbours() {
