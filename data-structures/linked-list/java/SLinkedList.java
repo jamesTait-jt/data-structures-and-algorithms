@@ -43,14 +43,4 @@ public class SLinkedList<T> {
 
         total++;
     }
-
-    public static void main(String[] args) {
-        SLinkedList<Integer> lst = new SLinkedList<Integer>();
-        lst.append(1);
-        lst.printLinkedList();
-        lst.append(2);
-        lst.printLinkedList();
-        lst.append(5);
-        lst.printLinkedList();
-    }
 }
