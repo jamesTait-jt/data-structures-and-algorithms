@@ -1,43 +1,11 @@
 # Data Structures and Algorithms
 An ongoing compilation of data structures and algorithms implemented to help solidify my knowledge.
 
-## Data Structures
-
-* Database
-* Graph
-* Hash Table 
-* Linked List
-* Queue
-* Stack
-* Tree
-
-## Algorithms
-
-### File System Traversal and Manipulation
-
-### Hashing Functions
-
-### Iteration
-
-### List Traversal
-
-### Scheduling
-
 ### Searching
 * Binary Search
 * Breadth First Search
 * Depth First Search
 * Linear Search
-
-### Sorting
-* Bogo Sort
-* Bubble Sort
-* Heap Sort
-* Insertion Sort
-* Merge Sort
-* Quantum Sort
-* Quick Sort
-* Radix Style Sorts
 
 ### String Manipulation
 * Determine whether a string is an anagram of another.
