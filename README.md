@@ -63,7 +63,9 @@ An ongoing compilation of data structures and algorithms implemented to help sol
 
 ### Tree Traversal
 
+## Implemented Algorithms
 
+### Sorting
 | Algorithm | C | Java | Python | Haskell
 |:--------------|:----------------:|:----------------:|:----------------:|:-----------------:|
 | [Bogo Sort](https://en.wikipedia.org/wiki/Bogosort)            |  |  | [:white_check_mark:](algorithms/sorting/bogo-sort/BogoSort.py)   |  |
@@ -74,4 +76,18 @@ An ongoing compilation of data structures and algorithms implemented to help sol
 | [Quick Sort](https://en.wikipedia.org/wiki/Quicksort)          |  |  | [:white_check_mark:](algorithms/sorting/QuickSort.py)         |  |
 | [Radix Style Sort](https://en.wikipedia.org/wiki/Radix_sort)   |  |  |                                                             |  |
 
+### Searching
 
+## Implemented Data Structures
+| Data Structure | C | Java | Python | Haskell
+|:--------------|:----------------:|:----------------:|:----------------:|:-----------------:|
+| [Array]()                |  |                                                        |                                                             |                                                              |
+| [Database]()             |  |                                                        |                                                             |                                                              |
+| [Graph]()                |  | [:white_check_mark:](data-structures/graph/java)       |                                                             |                                                              |  
+| [Hash Table]()           |  | [:white_check_mark:](data-structures/hash-table/java)  |                                                             |                                                              |
+| [Linked List (Single)]() |  | [:white_check_mark:](data-structures/linked-list/java) |                                                             |                                                              |
+| [Linked List (Double)]() |  |                                                        |                                                             |                                                              |
+| [Linked List (Cyclic)]() |  |                                                        |                                                             |                                                              |
+| [Queue]()                |  | [:white_check_mark:](data-structures/queue/java)       | [:white_check_mark:](data-structures/queue/python/Queue.py) | [:white_check_mark:](data-structures/queue/haskell/Queue.hs) |
+| [Stack]()                |  | [:white_check_mark:](data-structures/stack/java)       | [:white_check_mark:](data-structures/stack/python/Stack.py) | [:white_check_mark:](data-structures/stack/haskell/Stack.hs) |
+| [Tree]()                 |  |                                                        |                                                             | [:white_check_mark:](data-structures/tree/haskell/Tree.hs)   |
