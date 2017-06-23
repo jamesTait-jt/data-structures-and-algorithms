@@ -80,14 +80,14 @@ An ongoing compilation of data structures and algorithms implemented to help sol
 
 ## Implemented Data Structures
 | Data Structure | C | Java | Python | Haskell
-|:--------------|:----------------:|:----------------:|:----------------:|:-----------------:|
-| [Array]()                |  |                                                        |                                                             |                                                              |
-| [Database]()             |  |                                                        |                                                             |                                                              |
-| [Graph]()                |  | [:white_check_mark:](data-structures/graph/java)       |                                                             |                                                              |  
-| [Hash Table]()           |  | [:white_check_mark:](data-structures/hash-table/java)  |                                                             |                                                              |
-| [Linked List (Single)]() |  | [:white_check_mark:](data-structures/linked-list/java) |                                                             |                                                              |
-| [Linked List (Double)]() |  |                                                        |                                                             |                                                              |
-| [Linked List (Cyclic)]() |  |                                                        |                                                             |                                                              |
-| [Queue]()                |  | [:white_check_mark:](data-structures/queue/java)       | [:white_check_mark:](data-structures/queue/python/Queue.py) | [:white_check_mark:](data-structures/queue/haskell/Queue.hs) |
-| [Stack]()                |  | [:white_check_mark:](data-structures/stack/java)       | [:white_check_mark:](data-structures/stack/python/Stack.py) | [:white_check_mark:](data-structures/stack/haskell/Stack.hs) |
-| [Tree]()                 |  |                                                        |                                                             | [:white_check_mark:](data-structures/tree/haskell/Tree.hs)   |
+|:-------------------------|:-:|:-----------------------------------------------------------:|:-----------------------------------------------------------:|:------------------------------------------------------------:|
+| [Array]()                |   |                                                             |                                                             |                                                              |
+| [Database]()             |   |                                                             |                                                             |                                                              |
+| [Graph]()                |   | [:white_check_mark:](data-structures/graph/java)            |                                                             |                                                              |  
+| [Hash Table]()           |   | [:white_check_mark:](data-structures/hash-table/java)       |                                                             |                                                              |
+| [Linked List (Single)]() |   | [:white_check_mark:](data-structures/linked-list/java)      |                                                             |                                                              |
+| [Linked List (Double)]() |   |                                                             |                                                             |                                                              |
+| [Linked List (Cyclic)]() |   |                                                             |                                                             |                                                              |
+| [Queue]()                |   | [:white_check_mark:](data-structures/queue/java/Queue.java) | [:white_check_mark:](data-structures/queue/python/Queue.py) | [:white_check_mark:](data-structures/queue/haskell/Queue.hs) |
+| [Stack]()                |   | [:white_check_mark:](data-structures/stack/java/Stack.java) | [:white_check_mark:](data-structures/stack/python/Stack.py) | [:white_check_mark:](data-structures/stack/haskell/Stack.hs) |
+| [Tree]()                 |   |                                                             |                                                             | [:white_check_mark:](data-structures/tree/haskell/Tree.hs)   |
