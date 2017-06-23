@@ -1,19 +1,37 @@
-#TODO: fix lol
+from random import randint
+
+def RECQuickSort(arr, lo, hi): 
+    if lo < hi:
+        p = RECPartition(arr, lo, hi)
+        RECQuickSort(arr, lo, p - 1)
+        RECQuickSort(arr, p, hi)
+    else:
+        return arr
 
 def RECPartition(arr, lo, hi):
-    pivot = hi
-    for i in range(pivot - 1, lo, -1):
-        print(i, pivot, arr)
-        if arr[i] > arr[pivot]:
-            arr[i], arr[pivot] = arr[pivot], arr[i]
-            pivot -= 1
-    
+    pivot = lo 
 
-def RECQuickSort(arr, lo, hi):
-    pivot = hi
-    RECPartition(arr, lo, pivot)
-    RECPartition(arr, pivot + 1, hi)
+    while lo <= hi:
 
-arr = [5,2,3,1,4]
-RECPartition(arr, 0, 4)
-print(arr)
+        while arr[lo] < arr[pivot]:
+            lo += 1
+        
+        while arr[hi] > arr[pivot]:
+            hi -= 1
+
+        if lo <= hi:
+            arr[lo], arr[hi] = arr[hi], arr[lo]
+            lo += 1
+            hi -= 1
+
+    return lo
+
+
+arr = []
+for i in range(10000):
+    arr.append(randint(1,100000))
+       
+
+RECQuickSort(arr, 0, len(arr) - 1)
+print(arr == sorted(arr))
+
