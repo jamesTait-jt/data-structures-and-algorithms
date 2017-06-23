@@ -65,3 +65,5 @@ An ongoing compilation of data structures and algorithms implemented to help sol
 
 
 | Algorithm | C | CPP | Java | Python | Golang | JavaScript |
+|:--------------|:----------------:|:----------------:|:----------------:|:-----------------:|:-----------------:|:-----------------:|
+| [Bin Sort](http://www.cdn.geeksforgeeks.org/bucket-sort-2/)| | |[:white_check_mark:](bin_sort/BinSort.java) | [:white_check_mark:](bin_sort/bin_sort.py) | | |
