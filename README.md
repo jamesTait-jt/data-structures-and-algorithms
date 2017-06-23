@@ -57,7 +57,7 @@ An ongoing compilation of data structures and algorithms implemented to help sol
 * Reverse the string.
 * Reverse every word in a sentence.
 * Sort strings by length.
-* Determine if a string can be formed by interleaving the characters of teo
+* Determine if a string can be formed by interleaving the characters of two
   other given strings.
 * Convert string to it's integer representation.
 
@@ -65,4 +65,13 @@ An ongoing compilation of data structures and algorithms implemented to help sol
 
 
 | Algorithm | C | Java | Python | Haskell
-|:--------------|:----------------:|:----------------:|:----------------:|:-----------------:|:-----------------:|:-----------------:|
+|:--------------|:----------------:|:----------------:|:----------------:|:-----------------:|
+| [Bogo Sort] ()        |  |  | [:green_check_mark:](algorithms/sorting/bogo-sort/python)   |  |
+| [Bubble Sort] ()      |  |  | [:green_check_mark:](algorithms/sorting/bubble-sort/python) |  |
+| [Heap Sort] ()        |  |  |                                                             |  |
+| [Insertion Sort] ()   |  |  |                                                             |  |
+| [Merge Sort] ()       |  |  | [:green_check_mark:](algorithms/sorting/merge-sort/python)  |  |
+| [Quick Sort] ()       |  |  | [:green_check_mark:](algorithms/sorting/quick-sort)         |  |
+| [Radix Style Sort] () |  |  |                                                             |  |
+
+
