@@ -66,12 +66,12 @@ An ongoing compilation of data structures and algorithms implemented to help sol
 
 | Algorithm | C | Java | Python | Haskell
 |:--------------|:----------------:|:----------------:|:----------------:|:-----------------:|
-| [Bogo Sort] ()        |  |  | [:green_check_mark:](algorithms/sorting/bogo-sort/python)   |  |
-| [Bubble Sort] ()      |  |  | [:green_check_mark:](algorithms/sorting/bubble-sort/python) |  |
+| [Bogo Sort] ()        |  |  | [:green_check_mark:](algorithms/sorting/bogo-sort/BogoSort.py)   |  |
+| [Bubble Sort] ()      |  |  | [:green_check_mark:](algorithms/sorting/bubble-sort/BubbleSort.py |  |
 | [Heap Sort] ()        |  |  |                                                             |  |
 | [Insertion Sort] ()   |  |  |                                                             |  |
-| [Merge Sort] ()       |  |  | [:green_check_mark:](algorithms/sorting/merge-sort/python)  |  |
-| [Quick Sort] ()       |  |  | [:green_check_mark:](algorithms/sorting/quick-sort)         |  |
+| [Merge Sort] ()       |  |  | [:green_check_mark:](algorithms/sorting/merge-sort/MergeSort.py)  |  |
+| [Quick Sort] ()       |  |  | [:green_check_mark:](algorithms/sorting/QuickSort.py)         |  |
 | [Radix Style Sort] () |  |  |                                                             |  |
 
 
