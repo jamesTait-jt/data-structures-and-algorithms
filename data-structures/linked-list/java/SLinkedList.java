@@ -6,38 +6,6 @@ public class SLinkedList<T> {
         first = null;
     }
 
-    private SNode<T> getLast()  {
-        if (first == null) {
-            return first;
-        }
-        else {
-            SNode<T> curr = first;
-            while (curr.getNext() != null) {
-                curr = curr.getNext();
-            }
-            return curr;
-        }
-    }
-
-    private void printLinkedList() {
-        SNode<T> curr = first;
-        System.out.print("[");
-        if (curr == null) {
-            System.out.print("]\n");
-            return;
-        }
-        System.out.print(curr.getData() + ", ");
-        while (curr.getNext() != null) {
-            curr = curr.getNext();
-            if (curr.getNext() == null) {
-                System.out.print(curr.getData());
-            } else {
-                System.out.print(curr.getData() + ", ");
-            }
-        }
-        System.out.print("]\n");
-    }
-
     private void append(SNode<T> node) {
         if (first == null) {
             first = node;
@@ -47,13 +15,10 @@ public class SLinkedList<T> {
         }
     }
 
-    private void removeNode(SNode<T> node) {
+     private void removeNode(SNode<T> node) {
         SNode<T> curr = first;
         if (curr == null) {
             throw new RuntimeException("Cannot remove from empty linked list");
-        }
-            //} else if (curr == node) {
-        //    first = curr.getNext();
         }
         if (curr.getNext() == null && curr != node) {
             throw new RuntimeException("Node must be in the linked list");
@@ -71,7 +36,51 @@ public class SLinkedList<T> {
         }
     }
 
-    public void clear() {
+     public void clear() {
+        SNode<T> curr = first;
+        while (curr != null) {
+            printLinkedList();
+            System.out.println(curr.getData());
+            removeNode(curr);
+            curr = first;
+        }
+    }
+
+    private void printLinkedList() {
+        SNode<T> curr = first;
+        System.out.print("[");
+        if (curr == null) {
+            System.out.print("]\n");
+            return;
+        }
+        if (curr.getNext() == null) {
+            System.out.print(curr.getData());
+        }
+        else {
+            System.out.print(curr.getData() + ", ");
+        }
+        while (curr.getNext() != null) {
+            curr = curr.getNext();
+            if (curr.getNext() == null) {
+                System.out.print(curr.getData());
+            } else {
+                System.out.print(curr.getData() + ", ");
+            }
+        }
+        System.out.print("]\n");
+    }
+
+    private SNode<T> getLast()  {
+        if (first == null) {
+            return first;
+        }
+        else {
+            SNode<T> curr = first;
+            while (curr.getNext() != null) {
+                curr = curr.getNext();
+            }
+            return curr;
+        }
     }
 
     public SNode<T> getFirst() {
@@ -88,6 +97,8 @@ public class SLinkedList<T> {
         l.removeNode(l.getLast());
         l.printLinkedList();
         l.removeNode(l.getFirst().getNext());
+        l.printLinkedList();
+        l.clear();
         l.printLinkedList();
     }
 }
