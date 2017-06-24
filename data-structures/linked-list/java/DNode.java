@@ -1,11 +1,19 @@
-public class DNode<T> extends SNode<T> {
+public class DNode<T> {
     
     private DNode<T> prev;
     private DNode<T> next;
     private T data;
     
-    private DNode(T item) {
-        super(item);
+    public DNode(T item) {
+        this.data = item;
+        this.prev = null;
+        this.next = null;
+    }
+
+    public void printNode() {
+        System.out.println("Data: " + data);
+        System.out.println("Prev: " + prev);
+        System.out.println("Next: " + next);
     }
 
     public DNode<T> getPrev() {
@@ -16,7 +24,6 @@ public class DNode<T> extends SNode<T> {
         this.prev = prev;
     }
 
-    @Override
     public DNode<T> getNext() {
         return next;
     }
@@ -25,12 +32,10 @@ public class DNode<T> extends SNode<T> {
         this.next = next;
     }
 
-    @Override
     public T getData() {
         return data;
     }
 
-    @Override
     public void setData(T data) {
         this.data = data;
     }

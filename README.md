@@ -29,8 +29,6 @@ An ongoing compilation of data structures and algorithms implemented to help sol
   other given strings.
 * Convert string to it's integer representation.
 
-### Tree Traversal
-
 ## Implemented Algorithms
 
 ### Sorting
