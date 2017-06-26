@@ -4,7 +4,7 @@ def divide(arr):
     ret = []
     for n in arr:
         ret.append([n])
-    return ret 
+    return ret
 
 def merge(arr1, arr2):
     ret = []
@@ -18,7 +18,7 @@ def merge(arr1, arr2):
             ret.append(arr1[0])
             arr1.pop(0)
         else:
-            ret.append(arr2[0]) 
+            ret.append(arr2[0])
             arr2.pop(0)
     return ret
 

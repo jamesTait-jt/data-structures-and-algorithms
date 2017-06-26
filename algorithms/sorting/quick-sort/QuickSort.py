@@ -1,6 +1,6 @@
 from random import randint
 
-def RECQuickSort(arr, lo, hi): 
+def RECQuickSort(arr, lo, hi):
     if lo < hi:
         p = RECPartition(arr, lo, hi)
         RECQuickSort(arr, lo, p - 1)
@@ -15,7 +15,7 @@ def RECPartition(arr, lo, hi):
 
         while arr[lo] < arr[pivot]:
             lo += 1
-        
+
         while arr[hi] > arr[pivot]:
             hi -= 1
 

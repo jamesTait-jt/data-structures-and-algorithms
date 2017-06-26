@@ -38,7 +38,7 @@ void dequeue() {
     }
 }
 
-int main(void){
+int main(void) {
     for (int i = 0 ; i < MAX ; i++) {
         enqueue(i+1);
     }

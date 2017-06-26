@@ -1,5 +1,5 @@
 class Stack:
-  
+
     def __init__(self):
         self.data = []
 
@@ -13,7 +13,7 @@ class Stack:
             del self.data[len(self.data) - 1]
 
     def multiPush(self, xs):
-        if not isinstance(xs, list): 
+        if not isinstance(xs, list):
             raise TypeError("Can only add lists with multiPush")
         else:
             self.data = self.data + xs

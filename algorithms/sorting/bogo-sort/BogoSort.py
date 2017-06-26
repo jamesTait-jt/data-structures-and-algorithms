@@ -1,12 +1,12 @@
 import random
 
 def checkSorted(arr):
-    sorted = True
+    srtd = True
     for i in range(len(arr) - 1):
         if arr[i+1] < arr[i]:
-            sorted = False
+            srtd = False
             break
-    return sorted
+    return srtd
 
 def generatePerms(arr):
 
