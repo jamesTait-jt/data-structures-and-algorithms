@@ -39,8 +39,6 @@ public class SLinkedList<T> {
      public void clear() {
         SNode<T> curr = first;
         while (curr != null) {
-            printLinkedList();
-            System.out.println(curr.getData());
             removeNode(curr);
             curr = first;
         }

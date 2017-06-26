@@ -44,10 +44,12 @@ public class DLinkedList<T> {
         }
     }
 
-
-    
-
     public void clear() {
+        DNode<T> curr = first;
+        while (curr != null) {
+            removeNode(curr);
+            curr = first;
+        }
     }
 
     public void printLinkedList() { 
@@ -103,5 +105,7 @@ public class DLinkedList<T> {
         l.removeNode(l.getLast().getPrev());
         l.printLinkedList();
         l.getLast().getPrev().printNode();
+        l.clear();
+        l.printLinkedList();
     }
 }
