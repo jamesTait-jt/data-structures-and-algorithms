@@ -18,17 +18,17 @@ public class SLinkedList<T> {
      private void removeNode(SNode<T> node) {
         SNode<T> curr = first;
         if (curr == null) {
-            throw new RuntimeException("Cannot remove from empty linked list");
+            Exceptions.cannotRemoveFromEmpty();
         }
         if (curr.getNext() == null && curr != node) {
-            throw new RuntimeException("Node must be in the linked list");
+            Exceptions.listMustContainNode();
         }
         if (curr == node) {
             first = curr.getNext();
         } else {
             while (curr.getNext() != node) {
                 if (curr.getNext() == null) {
-                    throw new RuntimeException("Node must be in the linked list");
+                    Exceptions.listMustContainNode();
                 }
                 curr = curr.getNext();
             }

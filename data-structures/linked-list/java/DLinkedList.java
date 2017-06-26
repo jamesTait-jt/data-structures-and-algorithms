@@ -23,17 +23,17 @@ public class DLinkedList<T> {
     public void removeNode(DNode<T> node) {
         DNode<T> curr = first;
         if (curr == null) {
-            throw new RuntimeException("Cannot remove from empty linked list");
+            Exceptions.cannotRemoveFromEmpty();
         }
-        if (curr.getNext() == null && curr != node) {
-            throw new RuntimeException("Node must be in the linked list");
+        if (curr.getNext() == null && !curr.equals(node)) {
+            Exceptions.listMustContainNode();
         }
         if (curr == node) {
             first = curr.getNext();
         } else {
             while (curr.getNext() != node) {
                 if (curr.getNext() == null) {
-                    throw new RuntimeException("Node must be in the linked list");
+                    Exceptions.listMustContainNode();
                 }
                 curr = curr.getNext();
             }
@@ -107,5 +107,6 @@ public class DLinkedList<T> {
         l.getLast().getPrev().printNode();
         l.clear();
         l.printLinkedList();
+        l.removeNode(l.getFirst());
     }
 }

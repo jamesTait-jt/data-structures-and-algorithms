@@ -45,7 +45,7 @@ public class Node<T> {
         if (neighbours.contains(node)) {
            for (Iterator<Node<T>> iter = neighbours.listIterator() ; iter.hasNext() ; ) {
                 Node<T> a = iter.next();
-                if (a == node) {
+                if (a.equals(node)) {
                     iter.remove();
                 }       
             }
