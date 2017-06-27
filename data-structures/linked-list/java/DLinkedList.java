@@ -6,7 +6,11 @@ public class DLinkedList<T> {
     public DLinkedList() {
         this.first = null;
     }
-    
+
+    /**
+     *
+     * @param node
+     */
     public void append(DNode<T> node) {
         if (first == null) {
             first = node;
@@ -20,6 +24,10 @@ public class DLinkedList<T> {
         }
     }
 
+    /**
+     *
+     * @param node
+     */
     public void removeNode(DNode<T> node) {
         DNode<T> curr = first;
         if (curr == null) {
