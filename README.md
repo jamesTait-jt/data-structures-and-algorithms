@@ -2,6 +2,7 @@
 An ongoing compilation of data structures and algorithms implemented to help solidify my knowledge.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/edc9d4a8c8554dc0a708a99ff4e7e9f8)](https://www.codacy.com/app/jmsweg/data-structures-and-algorithms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jmsweg/data-structures-and-algorithms&amp;utm_campaign=Badge_Grade)
+[![Code Climate](https://codeclimate.com/github/jmsweg/data-structures-and-algorithms.png)](https://codeclimate.com/github/jmsweg/data-structures-and-algorithms)
 
 ### Searching
 * Binary Search
