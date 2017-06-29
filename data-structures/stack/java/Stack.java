@@ -1,6 +1,4 @@
-
 import java.util.ArrayList;
-import java.lang.RuntimeException;
 
 public class Stack<T> {
 
@@ -33,10 +31,11 @@ public class Stack<T> {
     }
 
     private void multiPop(int n) {
-        if (arr.size() > 0 && n <= arr.size()) {
-            while (n > 0) {
+        int counter = n;
+        if (arr.size() > 0 && counter <= arr.size()) {
+            while (counter > 0) {
                 pop();
-                n--;
+                counter--;
             }
         }
     }

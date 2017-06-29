@@ -1,5 +1,4 @@
 import java.util.ArrayList; 
-import java.lang.RuntimeException;
 
 public class Queue<T> {
 
