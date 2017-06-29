@@ -31,11 +31,12 @@ public class Queue<T> {
     }
   }
 
-  private void dequeueBatch(int item) {
-    if (item <= total) {
-      while (item > 0) {
+  private void dequeueBatch(int n) {
+    int counter = n;
+    if (counter <= total) {
+      while (counter > 0) {
         dequeue();
-        item--;
+        counter--;
       }
     }
     else {
