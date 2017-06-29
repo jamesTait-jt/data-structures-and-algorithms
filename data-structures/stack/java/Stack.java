@@ -21,7 +21,7 @@ public class Stack<T> {
             total --;
         }
         else {
-          throw new RuntimeException("Cannot pop from empty stack");
+          throw new MyException("Cannot pop from empty stack");
         }
     }
 

@@ -26,7 +26,7 @@ public class Queue<T> {
       total--;
     }
     else { 
-      throw new RuntimeException("Cannot remove from an empty queue");
+      throw new MyException("Cannot remove from an empty queue");
     }
   }
 
@@ -39,7 +39,7 @@ public class Queue<T> {
       }
     }
     else {
-      throw new RuntimeException("Cannot remove from an empty queue");
+      throw new MyException("Cannot remove from an empty queue");
     }
 
   }
