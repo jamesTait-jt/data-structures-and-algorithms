@@ -40,10 +40,10 @@ public class Graph<T> {
                 a.addNeighbour(b);
                 b.addNeighbour(a);
             } else {
-                throw new RuntimeException("Only one edge permitted between two nodes");
+                throw new MyException("Only one edge permitted between two nodes");
             }
        } else {
-           throw new RuntimeException("Both nodes must be contained in the graph");
+           throw new MyException("Both nodes must be contained in the graph");
        }
     }
 

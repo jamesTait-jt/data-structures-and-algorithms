@@ -49,7 +49,7 @@ public class Node<T> {
                 }       
             }
         } else {
-            throw new RuntimeException("Node is not a neighbour");
+            throw new MyException("Node is not a neighbour");
         }
     }
 
