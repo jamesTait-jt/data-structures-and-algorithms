@@ -1,5 +1,3 @@
-//TODO: Implement junit testing
-
 import java.util.ArrayList; 
 import java.lang.RuntimeException;
 
@@ -33,11 +31,11 @@ public class Queue<T> {
     }
   }
 
-  private void dequeueBatch(int n) {
-    if (n <= total) {
-      while (n > 0) {
+  private void dequeueBatch(int item) {
+    if (item <= total) {
+      while (item > 0) {
         dequeue();
-        n--;
+        item--;
       }
     }
     else {

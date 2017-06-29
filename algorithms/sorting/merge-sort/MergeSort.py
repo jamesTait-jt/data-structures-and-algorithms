@@ -33,7 +33,7 @@ def mergeSort(arr):
         else:
             return [item for sublist in divided for item in sublist]
 
-arr = []    
+arr = []
 for i in range(20000):
     arr.append(random.randint(0, 10000))
 

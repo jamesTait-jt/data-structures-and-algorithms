@@ -9,7 +9,7 @@ def RECQuickSort(arr, lo, hi):
         return arr
 
 def RECPartition(arr, lo, hi):
-    pivot = lo 
+    pivot = lo
 
     while lo <= hi:
 
@@ -30,7 +30,7 @@ def RECPartition(arr, lo, hi):
 arr = []
 for i in range(10000):
     arr.append(randint(1,100000))
-       
+
 
 RECQuickSort(arr, 0, len(arr) - 1)
 print(arr == sorted(arr))

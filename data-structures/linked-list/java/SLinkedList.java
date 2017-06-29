@@ -20,10 +20,10 @@ public class SLinkedList<T> {
         if (curr == null) {
             throw new MyException("Cannot remove item from empty list");
         }
-        if (curr.getNext() == null && curr != node) {
+        if (curr.getNext() == null && !curr.equals(node)) {
             throw new MyException("Node must be contained in linked list");
         }
-        if (curr == node) {
+        if (curr.equals(node)) {
             first = curr.getNext();
         } else {
             while (curr.getNext() != node) {
