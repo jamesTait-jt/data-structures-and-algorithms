@@ -24,7 +24,7 @@ public class Tree<T> {
             this.left = child;
             child.setParent(this);
         } else {
-            throw new RuntimeException("Child not empty");
+            throw new MyException("Child not empty");
         }
     }
 
@@ -38,7 +38,7 @@ public class Tree<T> {
             this.right = child;
             child.setParent(this);
         } else {
-            throw new RuntimeException("Child not empty");
+            throw new MyException("Child not empty");
         }
     }
 
