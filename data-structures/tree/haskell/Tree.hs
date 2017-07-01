@@ -1,8 +1,5 @@
 module Tree where
 
---TODO: - Draw tree
---      - build tree from list
-
 import Data.Maybe
 
 data Tree a = Empty
@@ -50,8 +47,43 @@ bfsToList tree = concat $ map myFromMaybe (bfs [tree])
     bfs [] = []
     bfs xs = map value xs ++ bfs (concat $ map children xs)
 
-
 myFromMaybe :: Maybe a -> [a]
 myFromMaybe (Nothing) = []
 myFromMaybe (Just x)  = [x]
 
+intFromMaybe :: Num a => Maybe a -> a
+intFromMaybe (Nothing) = 0
+intFromMaybe (Just x)  = x
+
+
+--------------------------- HEAP ----------------------------------
+
+heapify :: Ord a => Num a => Tree a -> Tree a
+heapify (Empty)        = Empty
+heapify (Branch x l r) = moveDown (Branch x (heapify l) (heapify r))
+
+-- Study this function for later usage --
+moveDown :: Ord a => Num a => Tree a -> Tree a
+moveDown (Empty)                                 = Empty
+moveDown t@(Branch x Empty Empty)                = t 
+moveDown (Branch x (Branch l Empty Empty) Empty) = Branch larger  (Branch smaller  Empty Empty) Empty
+    where (larger ,smaller) = if x >= l then (x, l) else (l, x)
+moveDown (Branch x Empty (Branch r Empty Empty)) = Branch larger (Branch smaller Empty Empty) Empty
+    where (larger, smaller) = if x >= r then (x, r) else (r, x)
+moveDown t@(Branch x lft@(Branch y p q) rt@(Branch z r s))
+    | x >= y && x >= z = t
+    | x <  y && y >= z = Branch y (moveDown (Branch x p q)) rt
+    | x <  z && y <  z = Branch z lft (moveDown (Branch x r s))
+i------------------------------------------
+
+swapLeft :: Tree a -> Tree a
+swapLeft (Empty) = Empty
+swapLeft (Branch x l r) = Branch x' l' r
+    where x' = head (myFromMaybe (value l))
+          l' = Branch x (head (myFromMaybe (left l))) (head (myFromMaybe (right l)))
+
+swapRight :: Tree a -> Tree a
+swapRight (Empty) = Empty
+swapRight (Branch x l r) = Branch x' l r'
+    where x' = head (myFromMaybe (value r))
+          r' = Branch x (head (myFromMaybe (left r))) (head (myFromMaybe (right r)))
