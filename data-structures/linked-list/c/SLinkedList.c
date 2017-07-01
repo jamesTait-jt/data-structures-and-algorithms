@@ -7,27 +7,28 @@ struct Node {
     struct Node *next;
 };
 
-void append(struct Node **head, int n) {
+struct Node *createNode(int data) {
+    struct Node *newNode = malloc(sizeof(struct Node));
 
-    // Need to allocate memory for the new node
-    struct Node *newNode = (struct Node *) malloc(sizeof (struct Node));
-    
-    newNode->data = n;
     newNode->next = NULL;
+    newNode->data = data;
 
-    struct Node *curr = head;
+    return newNode;
+}
 
-    while (curr->next != NULL) {
-        curr = curr->next;
+
+void append(struct Node *head, int n) {
+    if(!head) {                             // List is empty (head is null)
+        struct Node *newNode = createNode(n);
+        head = newNode;
+
     }
-    curr->next = newNode;
 }
 
 int main() {
     struct Node *head = NULL;
-
-    head->data = INT_MAX;
-    head->next = NULL;
     
+    append(head, 0);
+
     return 0;
 }
